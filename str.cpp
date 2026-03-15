@@ -20,4 +20,4 @@ int main()
         cout << "this string is not a palindrome" << endl;
     }
 }
-// this is the change i did.
+// this is the change i did...
