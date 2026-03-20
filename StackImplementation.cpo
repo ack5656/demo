@@ -1,0 +1,45 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+class Stack
+{
+private:
+    vector<int> st;
+
+public:
+    void push(int x)
+    {
+        st.push_back(x);
+    }
+
+    void pop()
+    {
+        if(st.empty())
+        {
+            cout << "stack underflow" << endl;
+            return;
+        }
+        st.pop_back();
+    }
+
+    int top()
+    {
+        if(st.empty())
+        {
+            cout << "stack is empty" << endl;
+            return -1;
+        }
+        return st.back();
+    }
+
+    bool isEmpty()
+    {
+        return st.empty();
+    }
+
+    int size()
+    {
+        return st.size();
+    }
+};
